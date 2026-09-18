@@ -1,0 +1,4 @@
+Trading-BOT Project Prompt
+Timestamp: 2026-09-17
+
+Create an academic Trading-BOT for NSE Indian equities using the NIFTY 50 universe and daily candles for swing trading. The strategy is a hybrid Trend + Momentum + Breakout system. Indicators: EMA20/EMA50, RSI14, previous 20-day high breakout, and 20-day average volume. Trend and breakout are mandatory; RSI and volume are confirmations. Long-only. Use NIFTY 50 Close > 50 EMA as a market regime filter. Enter next trading day open. Maximum 5 positions. Risk 1% of current equity per trade, maximum 20% capital per position. Initial stop = 2 ATR(14); trailing stop = highest close - 2 ATR(14), activated after +1R. No fixed profit target. Exit on stop/trailing stop, EMA20 <= EMA50, RSI14 <45, or 20-session maximum. Include transaction costs and avoid lookahead bias. AI should be used for explainability/research assistance, not to invent prices or deterministic signals.

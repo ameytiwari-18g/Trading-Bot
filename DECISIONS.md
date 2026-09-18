@@ -1,0 +1,22 @@
+# Locked Design Decisions
+
+- Market: Indian equities / shares
+- Exchange: NSE
+- Universe: NIFTY 50
+- Style: Swing trading
+- Data: Daily candles
+- Horizon: short swing, maximum 20 trading sessions
+- Strategy: Trend + Momentum + Breakout
+- Indicators: EMA + RSI + Breakout + Volume
+- Signal: Trend + Breakout mandatory; RSI + Volume confirmation
+- Entry/exit: next-day entry + ATR risk exit + trailing stop
+- Long-only
+- Market regime: NIFTY 50 Close > EMA50
+- Maximum simultaneous positions: 5
+- Position risk: 1% current equity; 20% position cap
+- Initial stop: 2 ATR
+- Trailing: highest close - 2 ATR after +1R
+- No fixed target
+- Exits: stop/trail, EMA20<=EMA50, RSI<45, 20 sessions
+- Starting capital: Rs 10,00,000
+- Default costs: 5 bps slippage + 2 bps brokerage + 1 bps other costs
